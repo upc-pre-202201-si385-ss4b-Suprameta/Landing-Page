@@ -51,6 +51,9 @@ li{
 .navbar__element__item:first-of-type:before{
     content: "";
 }
+
+/*/SECTION JACK/*/
+
 .second {
     width: 70%;
     margin: 40px auto;
@@ -66,33 +69,55 @@ li{
     font-size: 1.4rem;
     color: white;
 }
-.img-second {
-    display: block;
-    width: 200px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-}
-.cards-s {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.card-s {
-    margin: 20px;
-    justify-content: center;
-    background-color: #66615b;
-    border-radius: 10px;
-}
-#p-fixed {
-    position: relative;
-    bottom: 23px;
-}
 #description {
     width: 100%;
     color: black;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+.container-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #66615b;
+    color: white;
+
+}
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#description-card {
+    bottom: 30px;
+}
 
