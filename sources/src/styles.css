@@ -1,93 +1,58 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--primary-color);
 
-}
-:root{
-    --primary-color: #F4F3EF;
-}
+/* SECTION CTA PACIENTES*/
 
-.container{
-    width: 90%;
+.container2{
+    width: 70%;
     margin: auto;
 }
-
-.navbar{
+.CTA_Pacientes{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
 }
-.navbar__logo{
-    width: 200px;
-    border-radius: 30px;
-    border: 1px solid black;
-    padding: 0 15px;
-    background-color: white;
-    margin-top: 30px;
+.CTA_Pacientes__image{
+    min-width: 400px;
+    width: 500px;
+    max-width: 600px;
 }
-.line{
-    border-bottom: 1px solid black;
-    display: block;
-}
-.navbar__links{
+.CTA_Pacientes__text{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 }
-.navbar__element__item a{
+.CTA_Pacientes__text__title{
+    font-size: 2.7rem;
+    margin: 0;
+}
+.btn{
+    margin: 1rem auto;
+    background-color: #66615B;
+    padding: 1rem 2rem;
+    color: white;
     text-decoration: none;
-    color: black;
-    margin: 0 15px;
-    font-weight: bold;
+    border-radius: 40px;
     text-align: center;
+    width: 100px;
 }
-li{
-    list-style-type: none;
-}
-.navbar__element__item:before{
-    content: "|";
-}
-.navbar__element__item:first-of-type:before{
-    content: "";
-}
-
-.menu{
-    display: none;
-    width: 50px;
-    cursor: pointer;
-}
-.menu__links{
-    display: none;
-}
-
 @media only screen and (max-width: 500px){
-    .menu{
-        display: block;
-        z-index: 10;
-    }
-    .navbar__links{
-        display: none;
-    }
-    .navbar__element__item:first-of-type:before{
-        content: "|";
-    }
-    .menu__links{
-        display: flex;
-        flex-direction: column;
+
+    .CTA_Pacientes{
+        flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
-        background-color: #E7E4D9;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 60%;
-        height: 100vh;
-        border-radius: 10px;
-        transform: translateX(200%);
-        transition: transform 0.5s ease-in;
     }
+    .CTA_Pacientes__image{
+        width: 100%;
+    }
+    .CTA_Pacientes__text {
+        text-align: center;
+    }
+    .container2{
+        width: 90%;
+    }
+
+
 }
-.hamburger--active{
-    transform: translateX(0%);
-}
+
+
+
