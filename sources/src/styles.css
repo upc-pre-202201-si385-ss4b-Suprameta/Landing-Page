@@ -69,8 +69,6 @@ li{
     display: none;
 }
 
-/* SECTION CTA PACIENTES*/
-
 .container2{
     width: 70%;
     margin: auto;
@@ -172,7 +170,6 @@ li{
 .hamburger--active{
     transform: translateX(0%);
 }
-/*/SECTION JACK/*/
 
 .second {
     width: 70%;
@@ -279,8 +276,6 @@ img {
     }
 }
 
-/*SECTION JACK 2*/
-
 .second2 {
     width: 70%;
     margin: 40px auto;
@@ -350,7 +345,6 @@ img {
     gap: .5rem;
 }
 
-/*FAUSTO*/
 .prices {
     margin: 5rem auto;
 }
@@ -382,7 +376,6 @@ img {
     height: 250px;
     width: 300px;
     border:1px solid black;
-    border-radius-top: 10px;
 }
 .price__card__text__price{
     font-size: 50px;
@@ -415,8 +408,6 @@ img {
         align-items: center;
     }
 }
-
-/*MARCOS*/
 
 .download {
     background: #66615B;
