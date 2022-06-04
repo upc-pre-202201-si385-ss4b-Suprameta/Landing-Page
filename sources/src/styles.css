@@ -414,3 +414,185 @@ img {
         align-items: center;
     }
 }
+
+/*MARCOS*/
+.col-lg-6{
+    width: 25% !important;
+}
+#menu a, button{
+    font-size: 18px !important;
+    font-weight: 600;
+
+}
+
+#menu a{
+    color:#3f3f3f;
+
+}
+.galeria{
+    font-family:'ope sans';
+    color: #fff;
+
+}
+.imagen{
+    background-color: #fff;
+}
+.galeria h1{
+    text-align:center;
+    margin:20px 0 15px 0;
+    font-weight:300;
+}
+.galeria .box{
+    margin-left:420px;
+    margin-bottom:30px;
+    top:50%;
+    left:50%;
+
+}
+.fa-magnifying-glass{
+    background-color: #fff;
+    color:#111;
+
+
+}
+.text-search{
+    width:500px;text-align:center;display:inline-block;
+}
+input .src{
+    padding:9px 10px 9px 32px;
+    outline:none;
+    font-size:18px;
+    border-radius:15px;
+    color:#444;
+    border:3px solid #a50559;
+
+    width:60px;
+    transition:all .5s;
+
+}
+input.src:hover{
+    width:180px;
+    background-color:#fff;
+    border-color:#8c10b3;
+    box-shadow:0 0 5px #6dcff680;
+}
+.linea{
+    border-top:5px solid #0077c0;
+}
+.contenedor-imagenes{
+    display:flex;
+    width:85%;
+    margin:auto;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    border-radius:3px;
+
+}
+.contenedor-imagenes .imagen{
+    width:32%;
+    position:relative;
+    height: 250px;
+    margin-bottom:5px;
+    box-shadow:0px 0px 3px 0px rgba(0,0,0,.75);
+}
+.imagen{
+    margin-top:190px;
+}
+.imagen img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    margin-left:70px;
+}
+.btncar{
+    float:right;width:80px;position:fixed;margin-left:1250px;
+    z-index: 1;
+}
+.fa-bag-shopping{
+
+    height:70px;width:70px;
+}
+.centrado{
+    position:absolute;
+    top: 48px;
+    right: 25px;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+    color:#111;
+    background-color: #fff;
+    z-index: 1;
+}
+@media (max-width:600px){
+    .galeria h1{
+        text-align:center;
+        margin-right: 30px;
+
+    }
+    .galeria .box{
+        margin-left:5px;
+        margin-bottom:30px;
+        top:50%;
+        left:50%;
+        size: 10%;
+
+    }
+    .text-search{
+        width:370px;text-align:center;display:inline-block;
+    }
+    input .src{
+        padding:9px 10px 9px 32px;
+        outline:none;
+        font-size:18px;
+        border-radius:15px;
+        color:#444;
+        border:3px solid #a50559;
+
+        width:60px;
+        transition:all .5s;
+
+    }
+    input.src:hover{
+        width:180px;
+        background-color:#fff;
+        border-color:#8c10b3;
+        box-shadow:0 0 5px #6dcff680;
+    }
+    .linea{
+        border-top:5px solid #0077c0;
+    }
+
+    .contenedor-imagenes .imagen{
+        width:100%;
+        position:relative;
+        display: block;
+        height: 250px;
+        margin-bottom:5px;
+        box-shadow:0px 0px 3px 0px rgba(0,0,0,.75);
+    }
+
+    .imagen img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin-left:70px;
+    }
+    .btncar{
+        /*
+
+        */
+        right:10px;
+        float:right;width:45px;position:fixed;margin-left:500px;
+    }
+    .fa-bag-shopping{
+        height:40px;width:40px;
+    }
+    .centrado{
+        position:absolute;
+        top: 26px;
+        right: 12px;
+        font-size: 16px;
+        transform: translate(-50%, -50%);
+
+    }
+
+}
