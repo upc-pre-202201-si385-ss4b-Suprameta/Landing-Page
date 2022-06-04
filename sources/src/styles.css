@@ -448,3 +448,13 @@ footer{
 #icons {
     margin: auto;
 }
+
+#description3 {
+    color: black;
+}
+
+.button-fix {
+    font-size: 0.5em;
+    padding-left: 7px ;
+    padding-right: 7px ;
+}
