@@ -5,6 +5,8 @@ body{
 }
 :root{
     --primary-color: #F4F3EF;
+    --secundary-color: #E7E4D9;
+    --third-color: #66615B;
 }
 
 .container{
@@ -13,10 +15,16 @@ body{
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    background-color: var(--secundary-color);
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px dashed black;
 }
 .navbar__logo{
     width: 200px;
@@ -24,7 +32,6 @@ body{
     border: 1px solid black;
     padding: 0 15px;
     background-color: white;
-    margin-top: 30px;
 }
 .line{
     border-bottom: 1px solid black;
@@ -61,9 +68,67 @@ li{
     display: none;
 }
 
-@media only screen and (max-width: 500px){
+/* SECTION CTA PACIENTES*/
+
+.container2{
+    width: 70%;
+    margin: auto;
+}
+.CTA_Pacientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+.CTA_Pacientes__image{
+    min-width: 400px;
+    width: 600px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.CTA_Pacientes__text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+.CTA_Pacientes__text__title{
+    font-size: 2.7rem;
+    margin: 0;
+}
+.btn{
+    margin: 1rem auto;
+    background-color: var(--third-color);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    width: 150px;
+}
+@media only screen and (max-width: 700px){
+    .navbar__logo{
+        margin: 0;
+    }
+    .navbar__btn{
+        position: fixed;
+        background-color: var(--secundary-color);
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        justify-content: space-around;
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 1px dashed black;
+
+    }
     .menu{
         display: block;
+        position: fixed;
+        width: 50px;
+        top: 20px;
+        right: 10px;
         z-index: 10;
     }
     .navbar__links{
@@ -77,7 +142,7 @@ li{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        background-color: #E7E4D9;
+        background-color: var(--secundary-color);
         position: fixed;
         top: 0;
         right: 0;
@@ -86,6 +151,21 @@ li{
         border-radius: 10px;
         transform: translateX(200%);
         transition: transform 0.5s ease-in;
+    }
+
+
+    .CTA_Pacientes{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .CTA_Pacientes__image{
+        width: 100%;
+    }
+    .CTA_Pacientes__text {
+        text-align: center;
+    }
+    .container2{
+        width: 90%;
     }
 }
 .hamburger--active{
@@ -96,7 +176,7 @@ li{
 .second {
     width: 70%;
     margin: 40px auto;
-    background-color: #E7E4D9;
+    background-color: var(--secundary-color);
     border-radius: 30px;
     padding: 30px;
 }
@@ -158,7 +238,41 @@ img {
     flex-direction: column;
     gap: .5rem;
 }
-#description-card {
-    bottom: 40px;
-    position: relative;
+
+.CTA_Psicologos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+.CTA_Psicologos__image{
+    min-width: 400px;
+    width: 600px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.CTA_Psicologos__text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+.CTA_Psicologos__text__title{
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 700px){
+
+    .CTA_Psicologos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .CTA_Psicologos__image{
+        width: 100%;
+    }
+    .CTA_Psicologos__text {
+        text-align: center;
+    }
 }
