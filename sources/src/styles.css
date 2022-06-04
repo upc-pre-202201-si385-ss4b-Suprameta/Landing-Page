@@ -1,0 +1,451 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+
+}
+:root{
+    --primary-color: #F4F3EF;
+    --secundary-color: #E7E4D9;
+    --third-color: #66615B;
+    --four-color: #183454;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--secundary-color);
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px dashed black;
+}
+.navbar__logo{
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 0 15px;
+    background-color: white;
+}
+.line{
+    border-bottom: 1px solid black;
+    display: block;
+}
+.navbar__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navbar__element__item a{
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: bold;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+}
+.navbar__element__item:before{
+    content: "|";
+}
+.navbar__element__item:first-of-type:before{
+    content: "";
+}
+
+.menu{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+}
+.menu__links{
+    display: none;
+}
+
+.container2{
+    width: 70%;
+    margin: auto;
+}
+.CTA_Pacientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+.CTA_Pacientes__image{
+    min-width: 400px;
+    width: 600px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.CTA_Pacientes__text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+.CTA_Pacientes__text__title{
+    font-size: 2.7rem;
+    margin: 0;
+}
+.btn{
+    margin: 1rem auto;
+    background-color: var(--third-color);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    width: 150px;
+}
+@media only screen and (max-width: 700px){
+    .navbar__logo{
+        margin: 0;
+    }
+    .navbar__btn{
+        position: fixed;
+        background-color: var(--secundary-color);
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        justify-content: space-around;
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 1px dashed black;
+
+    }
+    .menu{
+        display: block;
+        position: fixed;
+        width: 50px;
+        top: 20px;
+        right: 10px;
+        z-index: 10;
+    }
+    .navbar__links{
+        display: none;
+    }
+    .navbar__element__item:first-of-type:before{
+        content: "|";
+    }
+    .menu__links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--secundary-color);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        border-radius: 10px;
+        transform: translateX(200%);
+        transition: transform 0.5s ease-in;
+    }
+
+
+    .CTA_Pacientes{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .CTA_Pacientes__image{
+        width: 100%;
+    }
+    .CTA_Pacientes__text {
+        text-align: center;
+    }
+    .container2{
+        width: 90%;
+    }
+}
+.hamburger--active{
+    transform: translateX(0%);
+}
+
+.second {
+    width: 70%;
+    margin: 40px auto;
+    background-color: var(--secundary-color);
+    border-radius: 30px;
+    padding: 30px;
+}
+.title-second {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.p-second {
+    margin: 20px auto;
+    width: 70%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+}
+#description {
+    width: 70%;
+    color: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    background: #66615b;
+    color: white;
+}
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.CTA_Psicologos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+.CTA_Psicologos__image{
+    min-width: 400px;
+    width: 600px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.CTA_Psicologos__text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+.CTA_Psicologos__text__title{
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 700px){
+
+    .CTA_Psicologos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .CTA_Psicologos__image{
+        width: 100%;
+    }
+    .CTA_Psicologos__text {
+        text-align: center;
+    }
+}
+
+.second2 {
+    width: 70%;
+    margin: 40px auto;
+    background-color: var(--third-color);
+    border-radius: 30px;
+    padding: 30px;
+}
+.title-second2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+.p-second2 {
+    margin: 20px auto;
+    width: 70%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+}
+#description2 {
+    width: 70%;
+    color: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-second2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    width: clamp(15rem, calc(15rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    background: var(--primary-color);
+    color: black;
+    padding: 1rem;
+}
+
+.card__body2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.prices {
+    margin: 5rem auto;
+}
+.prices__cards{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.price__card__title{
+    text-align: center;
+    color: white;
+    background-color: var(--third-color);
+    padding: 1rem;
+}
+.price__card__title--year{
+    text-align: center;
+    color: white;
+    background-color: var(--four-color);
+    padding: 1rem;
+}
+.price__card__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+    width: 300px;
+    border:1px solid black;
+}
+.price__card__text__price{
+    font-size: 50px;
+}
+.btn1{
+    margin-top: 1rem;
+    background-color: var(--third-color);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    /*position: absolute;*/
+
+}
+.btn2{
+    margin-top: 1rem;
+    background-color: var(--four-color);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    /*position: absolute;*/
+}
+@media only screen and (max-width: 700px){
+
+    .prices__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.download {
+    background: #66615B;
+    min-height: 100px;;
+    padding: 2rem;
+}
+.download p{
+    color:#f3f3f3;
+    text-align:center;
+
+}
+#icons  i {
+    font-size: 40px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+footer{
+    margin: 2rem auto;
+}
+
+.img-down {
+    margin: auto;
+}
+.img-fix {
+    justify-content: center;
+    margin: auto;
+}
+
+#icons {
+    margin: auto;
+}
+
+#description3 {
+    color: black;
+}
+
+.button-fix {
+    font-size: 0.5em;
+    padding-left: 7px ;
+    padding-right: 7px ;
+}
