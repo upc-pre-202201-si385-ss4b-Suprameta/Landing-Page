@@ -533,7 +533,7 @@ input.src:hover{
         margin-bottom:30px;
         top:50%;
         left:50%;
-        size: 10%;
+        /*size: 10%;*/
 
     }
     .text-search{
@@ -570,11 +570,10 @@ input.src:hover{
         box-shadow:0px 0px 3px 0px rgba(0,0,0,.75);
     }
 
-    .imagen img{
+    .img-down img{
         width: 50%;
         height: 100%;
         object-fit: cover;
-        margin-left:70px;
     }
     .btncar{
         /*
@@ -595,4 +594,33 @@ input.src:hover{
 
     }
 
+}
+.download {
+    background: #66615B;
+    min-height: 100px;;
+    padding: 2rem;
+}
+.download p{
+    color:#f3f3f3;
+    text-align:center;
+
+}
+#icons  i {
+    font-size: 40px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+.f-container{
+}
+
+.img-down {
+    margin: auto;
+}
+.img-fix {
+    justify-content: center;
+    margin: auto;
+}
+
+#icons {
+    margin: auto;
 }
