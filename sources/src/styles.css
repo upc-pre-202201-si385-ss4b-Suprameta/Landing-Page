@@ -326,17 +326,19 @@ img {
     max-width: 100%;
     display: block;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card2 {
     display: flex;
     flex-direction: column;
-    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    width: clamp(15rem, calc(15rem + 2vw), 22rem);
     overflow: hidden;
     box-shadow: 0 .2rem 2rem rgba(0, 0, 0, 0.2);
     border-radius: 1em;
     background: var(--primary-color);
     color: black;
+    padding: 1rem;
 }
 
 .card__body2 {
