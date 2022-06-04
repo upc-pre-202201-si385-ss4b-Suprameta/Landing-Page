@@ -7,6 +7,7 @@ body{
     --primary-color: #F4F3EF;
     --secundary-color: #E7E4D9;
     --third-color: #66615B;
+    --four-color: #183454;
 }
 
 .container{
@@ -350,12 +351,13 @@ img {
 
 /*FAUSTO*/
 .prices {
-    margin: 2rem auto;
+    margin: 5rem auto;
 }
 .prices__cards{
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .price__card__title{
@@ -367,7 +369,7 @@ img {
 .price__card__title--year{
     text-align: center;
     color: white;
-    background-color: #183454;
+    background-color: var(--four-color);
     padding: 1rem;
 }
 .price__card__text{
@@ -379,6 +381,7 @@ img {
     height: 250px;
     width: 300px;
     border:1px solid black;
+    border-radius-top: 10px;
 }
 .price__card__text__price{
     font-size: 50px;
@@ -396,7 +399,7 @@ img {
 }
 .btn2{
     margin-top: 1rem;
-    background-color: #183454;
+    background-color: var(--four-color);
     padding: 1rem 2rem;
     color: white;
     text-decoration: none;
