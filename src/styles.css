@@ -449,3 +449,15 @@ footer{
     padding-left: 7px ;
     padding-right: 7px ;
 }
+
+.btn-lenguage{
+    font-weight: bold;
+    cursor: pointer;
+}
+.video-about, .video-about, .product, .team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
