@@ -38,12 +38,12 @@ body{
     border-bottom: 1px solid black;
     display: block;
 }
-.navbar__links{
+.navbar--links{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.navbar__element__item a{
+.navbar--element--item a{
     text-decoration: none;
     color: black;
     margin: 0 15px;
@@ -53,10 +53,10 @@ body{
 li{
     list-style-type: none;
 }
-.navbar__element__item:before{
+.navbar--element--item:before{
     content: "|";
 }
-.navbar__element__item:first-of-type:before{
+.navbar--element--item:first-of-type:before{
     content: "";
 }
 
@@ -65,7 +65,7 @@ li{
     width: 50px;
     cursor: pointer;
 }
-.menu__links{
+.menu--links{
     display: none;
 }
 
@@ -73,7 +73,7 @@ li{
     width: 70%;
     margin: auto;
 }
-.CTA_Pacientes{
+.CTA-Pacientes{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,18 +81,18 @@ li{
     padding: 3rem 0;
     margin-top: 5rem;
 }
-.CTA_Pacientes__image{
+.CTA-Pacientes--image{
     min-width: 400px;
     width: 600px;
     max-width: 600px;
     border-radius: 20px;
 }
-.CTA_Pacientes__text{
+.CTA-Pacientes--text{
     display: flex;
     flex-direction: column;
     gap: 2rem
 }
-.CTA_Pacientes__text__title{
+.CTA-Pacientes--text__title{
     font-size: 2.7rem;
     margin: 0;
 }
@@ -110,7 +110,7 @@ li{
     .navbar__logo{
         margin: 0;
     }
-    .navbar__btn{
+    .navbar--btn{
         position: fixed;
         background-color: var(--secundary-color);
         display: flex;
@@ -130,13 +130,13 @@ li{
         right: 10px;
         z-index: 10;
     }
-    .navbar__links{
+    .navbar--links{
         display: none;
     }
-    .navbar__element__item:first-of-type:before{
+    .navbar--element--item:first-of-type:before{
         content: "|";
     }
-    .menu__links{
+    .menu--links{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -153,14 +153,14 @@ li{
     }
 
 
-    .CTA_Pacientes{
+    .CTA-Pacientes{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .CTA_Pacientes__image{
+    .CTA-Pacientes--image{
         width: 100%;
     }
-    .CTA_Pacientes__text {
+    .CTA-Pacientes--text {
         text-align: center;
     }
     .container2{
@@ -231,14 +231,14 @@ img {
     color: white;
 }
 
-.card__body {
+.card--body {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.CTA_Psicologos{
+.CTA-Psicologos{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -246,32 +246,32 @@ img {
     padding: 3rem 0;
     margin-top: 5rem;
 }
-.CTA_Psicologos__image{
+.CTA-Psicologos--image{
     min-width: 400px;
     width: 600px;
     max-width: 600px;
     border-radius: 20px;
 }
-.CTA_Psicologos__text{
+.CTA-Psicologos--text{
     display: flex;
     flex-direction: column;
     gap: 2rem
 }
-.CTA_Psicologos__text__title{
+.CTA-Psicologos--text--title{
     font-size: 2.7rem;
     margin: 0;
 }
 
 @media only screen and (max-width: 700px){
 
-    .CTA_Psicologos{
+    .CTA-Psicologos{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .CTA_Psicologos__image{
+    .CTA-Psicologos--image{
         width: 100%;
     }
-    .CTA_Psicologos__text {
+    .CTA-Psicologos--text {
         text-align: center;
     }
 }
@@ -338,7 +338,7 @@ img {
     padding: 1rem;
 }
 
-.card__body2 {
+.card--body2 {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -348,26 +348,26 @@ img {
 .prices {
     margin: 5rem auto;
 }
-.prices__cards{
+.prices--cards{
     display: flex;
     gap: 4rem;
     justify-content: center;
     margin-top: 3rem;
 }
 
-.price__card__title{
+.price--card--title{
     text-align: center;
     color: white;
     background-color: var(--third-color);
     padding: 1rem;
 }
-.price__card__title--year{
+.price--card--title--year{
     text-align: center;
     color: white;
     background-color: var(--four-color);
     padding: 1rem;
 }
-.price__card__text{
+.price--card--text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -377,7 +377,7 @@ img {
     width: 300px;
     border:1px solid black;
 }
-.price__card__text__price{
+.price--card--text--price{
     font-size: 50px;
 }
 .btn1{
@@ -403,7 +403,7 @@ img {
 }
 @media only screen and (max-width: 700px){
 
-    .prices__cards{
+    .prices--cards{
         flex-direction: column;
         align-items: center;
     }
