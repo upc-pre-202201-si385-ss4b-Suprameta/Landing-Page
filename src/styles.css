@@ -38,12 +38,12 @@ body{
     border-bottom: 1px solid black;
     display: block;
 }
-.navbar__links{
+.navbar--links{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.navbar__element__item a{
+.navbar--element--item a{
     text-decoration: none;
     color: black;
     margin: 0 15px;
@@ -53,10 +53,10 @@ body{
 li{
     list-style-type: none;
 }
-.navbar__element__item:before{
+.navbar--element--item:before{
     content: "|";
 }
-.navbar__element__item:first-of-type:before{
+.navbar--element--item:first-of-type:before{
     content: "";
 }
 
@@ -65,15 +65,15 @@ li{
     width: 50px;
     cursor: pointer;
 }
-.menu__links{
+.menu--links{
     display: none;
 }
 
-.container2{
+.container-2{
     width: 70%;
     margin: auto;
 }
-.CTA_Pacientes{
+.CTA-Patients{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,18 +81,18 @@ li{
     padding: 3rem 0;
     margin-top: 5rem;
 }
-.CTA_Pacientes__image{
+.CTA-Patients--image{
     min-width: 400px;
     width: 600px;
     max-width: 600px;
     border-radius: 20px;
 }
-.CTA_Pacientes__text{
+.CTA-Patients--text{
     display: flex;
     flex-direction: column;
     gap: 2rem
 }
-.CTA_Pacientes__text__title{
+.CTA-Patients--text__title{
     font-size: 2.7rem;
     margin: 0;
 }
@@ -110,7 +110,7 @@ li{
     .navbar__logo{
         margin: 0;
     }
-    .navbar__btn{
+    .navbar--btn{
         position: fixed;
         background-color: var(--secundary-color);
         display: flex;
@@ -130,13 +130,13 @@ li{
         right: 10px;
         z-index: 10;
     }
-    .navbar__links{
+    .navbar--links{
         display: none;
     }
-    .navbar__element__item:first-of-type:before{
+    .navbar--element--item:first-of-type:before{
         content: "|";
     }
-    .menu__links{
+    .menu--links{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -153,17 +153,17 @@ li{
     }
 
 
-    .CTA_Pacientes{
+    .CTA-Patients{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .CTA_Pacientes__image{
+    .CTA-Patients--image{
         width: 100%;
     }
-    .CTA_Pacientes__text {
+    .CTA-Patients--text {
         text-align: center;
     }
-    .container2{
+    .container-2{
         width: 90%;
     }
 }
@@ -231,14 +231,14 @@ img {
     color: white;
 }
 
-.card__body {
+.card--body {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.CTA_Psicologos{
+.CTA-Psychologists{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -246,56 +246,56 @@ img {
     padding: 3rem 0;
     margin-top: 5rem;
 }
-.CTA_Psicologos__image{
+.CTA-Psychologists--image{
     min-width: 400px;
     width: 600px;
     max-width: 600px;
     border-radius: 20px;
 }
-.CTA_Psicologos__text{
+.CTA-Psychologists--text{
     display: flex;
     flex-direction: column;
     gap: 2rem
 }
-.CTA_Psicologos__text__title{
+.CTA-Psychologists--text--title{
     font-size: 2.7rem;
     margin: 0;
 }
 
 @media only screen and (max-width: 700px){
 
-    .CTA_Psicologos{
+    .CTA-Psychologists{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .CTA_Psicologos__image{
+    .CTA-Psychologists--image{
         width: 100%;
     }
-    .CTA_Psicologos__text {
+    .CTA-Psychologists--text {
         text-align: center;
     }
 }
 
-.second2 {
+.second-2 {
     width: 70%;
     margin: 40px auto;
     background-color: var(--third-color);
     border-radius: 30px;
     padding: 30px;
 }
-.title-second2 {
+.title-second-2 {
     text-align: center;
     font-size: 2.5rem;
     color: white;
 }
-.p-second2 {
+.p-second-2 {
     margin: 20px auto;
     width: 70%;
     text-align: center;
     font-size: 1.4rem;
     color: black;
 }
-#description2 {
+#description-2 {
     width: 70%;
     color: white;
 }
@@ -308,7 +308,7 @@ img {
     margin: 0;
 }
 
-.container-second2 {
+.container-second-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -326,7 +326,7 @@ img {
     border-radius: 10px;
 }
 
-.card2 {
+.card-2 {
     display: flex;
     flex-direction: column;
     width: clamp(15rem, calc(15rem + 2vw), 22rem);
@@ -338,7 +338,7 @@ img {
     padding: 1rem;
 }
 
-.card__body2 {
+.card--body-2 {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -348,26 +348,26 @@ img {
 .prices {
     margin: 5rem auto;
 }
-.prices__cards{
+.prices--cards{
     display: flex;
     gap: 4rem;
     justify-content: center;
     margin-top: 3rem;
 }
 
-.price__card__title{
+.price--card--title{
     text-align: center;
     color: white;
     background-color: var(--third-color);
     padding: 1rem;
 }
-.price__card__title--year{
+.price--card--title--year{
     text-align: center;
     color: white;
     background-color: var(--four-color);
     padding: 1rem;
 }
-.price__card__text{
+.price--card--text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -377,10 +377,10 @@ img {
     width: 300px;
     border:1px solid black;
 }
-.price__card__text__price{
+.price--card--text--price{
     font-size: 50px;
 }
-.btn1{
+.btn-1{
     margin-top: 1rem;
     background-color: var(--third-color);
     padding: 1rem 2rem;
@@ -391,7 +391,7 @@ img {
     /*position: absolute;*/
 
 }
-.btn2{
+.btn-2{
     margin-top: 1rem;
     background-color: var(--four-color);
     padding: 1rem 2rem;
@@ -403,7 +403,7 @@ img {
 }
 @media only screen and (max-width: 700px){
 
-    .prices__cards{
+    .prices--cards{
         flex-direction: column;
         align-items: center;
     }
@@ -440,7 +440,7 @@ footer{
     margin: auto;
 }
 
-#description3 {
+#description-3 {
     color: black;
 }
 
@@ -448,4 +448,16 @@ footer{
     font-size: 0.5em;
     padding-left: 7px ;
     padding-right: 7px ;
+}
+
+.btn-lenguage{
+    font-weight: bold;
+    cursor: pointer;
+}
+.video-about, .video-about, .product, .team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
 }
