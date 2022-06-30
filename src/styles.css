@@ -69,11 +69,11 @@ li{
     display: none;
 }
 
-.container2{
+.container-2{
     width: 70%;
     margin: auto;
 }
-.CTA-Pacientes{
+.CTA-Patients{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,18 +81,18 @@ li{
     padding: 3rem 0;
     margin-top: 5rem;
 }
-.CTA-Pacientes--image{
+.CTA-Patients--image{
     min-width: 400px;
     width: 600px;
     max-width: 600px;
     border-radius: 20px;
 }
-.CTA-Pacientes--text{
+.CTA-Patients--text{
     display: flex;
     flex-direction: column;
     gap: 2rem
 }
-.CTA-Pacientes--text__title{
+.CTA-Patients--text__title{
     font-size: 2.7rem;
     margin: 0;
 }
@@ -153,17 +153,17 @@ li{
     }
 
 
-    .CTA-Pacientes{
+    .CTA-Patients{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .CTA-Pacientes--image{
+    .CTA-Patients--image{
         width: 100%;
     }
-    .CTA-Pacientes--text {
+    .CTA-Patients--text {
         text-align: center;
     }
-    .container2{
+    .container-2{
         width: 90%;
     }
 }
@@ -238,7 +238,7 @@ img {
     gap: .5rem;
 }
 
-.CTA-Psicologos{
+.CTA-Psychologists{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -246,56 +246,56 @@ img {
     padding: 3rem 0;
     margin-top: 5rem;
 }
-.CTA-Psicologos--image{
+.CTA-Psychologists--image{
     min-width: 400px;
     width: 600px;
     max-width: 600px;
     border-radius: 20px;
 }
-.CTA-Psicologos--text{
+.CTA-Psychologists--text{
     display: flex;
     flex-direction: column;
     gap: 2rem
 }
-.CTA-Psicologos--text--title{
+.CTA-Psychologists--text--title{
     font-size: 2.7rem;
     margin: 0;
 }
 
 @media only screen and (max-width: 700px){
 
-    .CTA-Psicologos{
+    .CTA-Psychologists{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .CTA-Psicologos--image{
+    .CTA-Psychologists--image{
         width: 100%;
     }
-    .CTA-Psicologos--text {
+    .CTA-Psychologists--text {
         text-align: center;
     }
 }
 
-.second2 {
+.second-2 {
     width: 70%;
     margin: 40px auto;
     background-color: var(--third-color);
     border-radius: 30px;
     padding: 30px;
 }
-.title-second2 {
+.title-second-2 {
     text-align: center;
     font-size: 2.5rem;
     color: white;
 }
-.p-second2 {
+.p-second-2 {
     margin: 20px auto;
     width: 70%;
     text-align: center;
     font-size: 1.4rem;
     color: black;
 }
-#description2 {
+#description-2 {
     width: 70%;
     color: white;
 }
@@ -308,7 +308,7 @@ img {
     margin: 0;
 }
 
-.container-second2 {
+.container-second-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -326,7 +326,7 @@ img {
     border-radius: 10px;
 }
 
-.card2 {
+.card-2 {
     display: flex;
     flex-direction: column;
     width: clamp(15rem, calc(15rem + 2vw), 22rem);
@@ -338,7 +338,7 @@ img {
     padding: 1rem;
 }
 
-.card--body2 {
+.card--body-2 {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -380,7 +380,7 @@ img {
 .price--card--text--price{
     font-size: 50px;
 }
-.btn1{
+.btn-1{
     margin-top: 1rem;
     background-color: var(--third-color);
     padding: 1rem 2rem;
@@ -391,7 +391,7 @@ img {
     /*position: absolute;*/
 
 }
-.btn2{
+.btn-2{
     margin-top: 1rem;
     background-color: var(--four-color);
     padding: 1rem 2rem;
@@ -440,7 +440,7 @@ footer{
     margin: auto;
 }
 
-#description3 {
+#description-3 {
     color: black;
 }
 
